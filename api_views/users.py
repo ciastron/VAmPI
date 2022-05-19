@@ -19,8 +19,8 @@ def get_all_users():
 
 
 def debug():
-    return_value = jsonify({'users': User.get_all_users_debug()})
-    return return_value
+    # return_value = jsonify({'users': User.get_all_users_debug()})
+    return {"message": "not with Marco :-)"}
 
 
 def get_by_username(username):

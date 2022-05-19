@@ -81,10 +81,18 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  message: 
-                    type: string
+                type: array
+                items:
+                  type: object
+                  properties:
+                    admin:
+                      type: boolean
+                    email:
+                      type: string
+                    password:
+                      type: string
+                    username:
+                      type: string
   /users/v1/register:
     post:
       tags:
